@@ -16,7 +16,7 @@ def get_contestant_name(data, occupation)
   data.each do |season_data, all_contestants|
     all_contestants.each do |contestant|
       if contestant["occupation"] == occupation
-        return contestant["name"].split(" ")[0].to_s
+        return contestant["name"].to_s
       end
     end
   end
