@@ -57,5 +57,5 @@ def get_average_age_for_season(data, season)
   end
   avg_age = total_years / num_contestants
   decimal = avg_age % 1
-  decimal >= .5 ? (avg_age + (1 - decimal)) : (avg_age - decimal)
+  decimal >= 0.5 ? (avg_age + (1 - decimal)) : (avg_age - decimal)
 end
